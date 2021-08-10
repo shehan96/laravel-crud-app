@@ -22,3 +22,5 @@ Route::get('/users', function ()
 {
     return 'hi';
 });
+
+Route::get('books',[BooksController::class, 'get']);
