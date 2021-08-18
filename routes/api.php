@@ -28,4 +28,9 @@ Route::get('/users/{id}', function ()
     return 'hi';
 });
 
+Route::get('/users/{id}', function ()
+{
+    return 'hi';
+});
+
 Route::get('books',[BooksController::class, 'get']);
