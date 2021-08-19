@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class TestController extends Controller
 {
@@ -13,7 +14,8 @@ class TestController extends Controller
      */
     public function index()
     {
-        return 'Hello Test';
+        $token = Str::random(60);
+        return $token;
     }
 
     /**
