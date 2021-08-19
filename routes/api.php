@@ -2,6 +2,9 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TestController;
+use App\Http\Controllers\WestController;
+use App\Http\Controllers\FileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,19 +21,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/users', function ()
-{
-    return 'hi';
-});
-
-Route::get('/users/{id}', function ()
-{
-    return 'hi';
-});
-
-Route::get('/users/{id}', function ()
-{
-    return 'hi';
-});
-
-Route::get('books',[BooksController::class, 'get']);
+Route::resource('test', TestController::class);
+Route::resource('west', WestController::class);
+Route::resource('file', FileController::class);
