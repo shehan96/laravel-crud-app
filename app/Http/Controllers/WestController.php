@@ -54,7 +54,7 @@ class WestController extends Controller
 
             $code = $e->getCode();
             $message = $e->getMessage();
-              return response()->json(["code" => $code, "message" => $message]);
+            return response()->json(["code" => $code, "message" => $message]);
           }
 
         // return $all['name'];
@@ -68,7 +68,7 @@ class WestController extends Controller
      */
     public function show($id)
     {
-        return $id;
+        return response()->json($id);
     }
 
     /**
