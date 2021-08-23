@@ -31,7 +31,7 @@ class FileController extends Controller
         // $path = Storage::putFile('photos', new File('/path/to/photo'));
         // $result = Storage::putFile('public/new', $request->file('file'));
         // $result = Storage::put('public/new', $request->file('file'));
-        $imageSize = $request->file('file')->getSize();
+        // $imageSize = $request->file('file')->getSize();
         $extension = $request->file('file')->extension();
         $kbSize = $imageSize / 1000;
         $newImageName = $t . '.' . $extension;
