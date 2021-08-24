@@ -17,9 +17,9 @@ use App\Http\Controllers\FileController;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+//Route::middleware('auth:api')->get('/user', function (Request $request) {
+   // return $request->user();
+//});
 
 Route::resource('test', TestController::class);
 Route::resource('west', WestController::class);
