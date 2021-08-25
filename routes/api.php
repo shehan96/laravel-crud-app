@@ -24,3 +24,4 @@ use App\Http\Controllers\FileController;
 Route::resource('test', TestController::class);
 Route::resource('west', WestController::class);
 Route::resource('file', FileController::class);
+Route::resource('file2', FileController::class);
